@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Moo+Lah+Lah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Doto:wght@100..900&family=Moo+Lah+Lah&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+.intro{
+  font-family: "Doto", system-ui;
+  width: 300px;
+}
+
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+html{
+  scrollbar-width: none;
+}
+.word  {
+  font-family: "Cherry Bomb One", system-ui;
+   
+  cursor: pointer;
+  display: inline-block;
+  font-size: 100px;
+  user-select: none;
+  line-height: .8;
+}
+
+.animated-background {
+  background-size: 400%;
+  -webkit-animation: animation 5s ease-in-out alternate infinite;
+  -moz-animation: animation 5s ease-in-out alternate infinite;
+  animation: animation 5s ease-in-out alternate infinite;
+ /* Firefox */
+}
+@keyframes animation {
+  0%,
+  100% {
+      background-position: 0% 50%;
+  }
+  
+  50% {
+      background-position: 100% 50%;
+  }
+}
+ /* modle inside Html */
+.laptop iframe{
+  width: 1024px;
+  height: 670px;
+  border-radius: 20px;
+}
+/* TypeAnimation */
