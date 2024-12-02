@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+# 3D Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my 3D Portfolio Website, a showcase of my skills and projects in the field of 3D modeling, animation, and interactive experiences. This website is built using cutting-edge technologies such as React, TypeScript, and Vite, ensuring a seamless and engaging user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive 3D Models**: Explore my 3D models in a fully interactive environment, allowing you to rotate, zoom, and pan through each project.
+- **Real-time Audio Control**: Seamlessly control audio playback and volume directly within the 3D environment.
+- **Responsive Design**: Enjoy a consistent and optimized experience across various devices and screen sizes.
+- **TypeScript and ESLint Integration**: Ensuring code quality, type safety, and best practices throughout the project.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Utilized for building the user interface and managing state changes.
+- **TypeScript**: Implemented for type safety, code maintainability, and scalability.
+- **React-three-fibre**: Implemented for Making 3D Envrioemnet.
+- **React-three-drei**:Implemented for Making 3D Envrioemnet Functionality.
+- **Vite**: Chosen for its fast development cycle, Hot Module Replacement (HMR), and optimized production builds.
+- **ESLint**: Configured for code quality and type checking, ensuring adherence to best practices and coding standards.
 
-- Configure the top-level `parserOptions` property like this:
+## Development Insights
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Vite Plugins**: Utilized official Vite plugins for React development, including [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) and [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc).
+- **ESLint Configuration**: Extended to include type-aware lint rules for enhanced code quality and type checking.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
